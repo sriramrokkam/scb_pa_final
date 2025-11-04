@@ -1,0 +1,346 @@
+@prefix : <https://urldefense.com/v3/__http://example.org/doc-copyright-ontology*__;Iw!!ASp95G87aa5DoyK5mB3l!97D6QAuA4ioTAkEX5RTEuUN412JClE4XrgEELqW0cB0STLnx1nPquAUGpAftz5H8ZQStSwsyo2jkymkK1wc_sbaIPQ$ > .
+@prefix owl: <https://urldefense.com/v3/__http://www.w3.org/2002/07/owl*__;Iw!!ASp95G87aa5DoyK5mB3l!97D6QAuA4ioTAkEX5RTEuUN412JClE4XrgEELqW0cB0STLnx1nPquAUGpAftz5H8ZQStSwsyo2jkymkK1wdIqkzSeg$ > .
+@prefix rdf: <https://urldefense.com/v3/__http://www.w3.org/1999/02/22-rdf-syntax-ns*__;Iw!!ASp95G87aa5DoyK5mB3l!97D6QAuA4ioTAkEX5RTEuUN412JClE4XrgEELqW0cB0STLnx1nPquAUGpAftz5H8ZQStSwsyo2jkymkK1wdCcKnlFg$ > .
+@prefix xml: <https://urldefense.com/v3/__http://www.w3.org/XML/1998/namespace__;!!ASp95G87aa5DoyK5mB3l!97D6QAuA4ioTAkEX5RTEuUN412JClE4XrgEELqW0cB0STLnx1nPquAUGpAftz5H8ZQStSwsyo2jkymkK1wcxyqvy8g$ > .
+@prefix xsd: <https://urldefense.com/v3/__http://www.w3.org/2001/XMLSchema*__;Iw!!ASp95G87aa5DoyK5mB3l!97D6QAuA4ioTAkEX5RTEuUN412JClE4XrgEELqW0cB0STLnx1nPquAUGpAftz5H8ZQStSwsyo2jkymkK1weNeUtjKg$ > .
+@prefix rdfs: <https://urldefense.com/v3/__http://www.w3.org/2000/01/rdf-schema*__;Iw!!ASp95G87aa5DoyK5mB3l!97D6QAuA4ioTAkEX5RTEuUN412JClE4XrgEELqW0cB0STLnx1nPquAUGpAftz5H8ZQStSwsyo2jkymkK1wdXqk8a0w$ > .
+@prefix dc: <https://urldefense.com/v3/__http://purl.org/dc/elements/1.1/__;!!ASp95G87aa5DoyK5mB3l!97D6QAuA4ioTAkEX5RTEuUN412JClE4XrgEELqW0cB0STLnx1nPquAUGpAftz5H8ZQStSwsyo2jkymkK1wdqR6ylag$ > .
+@prefix dcterms: <https://urldefense.com/v3/__http://purl.org/dc/terms/__;!!ASp95G87aa5DoyK5mB3l!97D6QAuA4ioTAkEX5RTEuUN412JClE4XrgEELqW0cB0STLnx1nPquAUGpAftz5H8ZQStSwsyo2jkymkK1wcco43wIg$ > .
+@prefix foaf: <https://urldefense.com/v3/__http://xmlns.com/foaf/0.1/__;!!ASp95G87aa5DoyK5mB3l!97D6QAuA4ioTAkEX5RTEuUN412JClE4XrgEELqW0cB0STLnx1nPquAUGpAftz5H8ZQStSwsyo2jkymkK1wcBwNpZOA$ > .
+@prefix cc: <https://urldefense.com/v3/__http://creativecommons.org/ns*__;Iw!!ASp95G87aa5DoyK5mB3l!97D6QAuA4ioTAkEX5RTEuUN412JClE4XrgEELqW0cB0STLnx1nPquAUGpAftz5H8ZQStSwsyo2jkymkK1wdJBVcWMg$ > .
+@prefix dcat: <https://urldefense.com/v3/__http://www.w3.org/ns/dcat*__;Iw!!ASp95G87aa5DoyK5mB3l!97D6QAuA4ioTAkEX5RTEuUN412JClE4XrgEELqW0cB0STLnx1nPquAUGpAftz5H8ZQStSwsyo2jkymkK1weWDd75Hg$ > .
+@prefix prov: <https://urldefense.com/v3/__http://www.w3.org/ns/prov*__;Iw!!ASp95G87aa5DoyK5mB3l!97D6QAuA4ioTAkEX5RTEuUN412JClE4XrgEELqW0cB0STLnx1nPquAUGpAftz5H8ZQStSwsyo2jkymkK1wdyXGqJAA$ > .
+@prefix schema: <https://urldefense.com/v3/__http://schema.org/__;!!ASp95G87aa5DoyK5mB3l!97D6QAuA4ioTAkEX5RTEuUN412JClE4XrgEELqW0cB0STLnx1nPquAUGpAftz5H8ZQStSwsyo2jkymkK1wfz-GNAXw$ > .
+
+@base <https://urldefense.com/v3/__http://example.org/doc-copyright-ontology__;!!ASp95G87aa5DoyK5mB3l!97D6QAuA4ioTAkEX5RTEuUN412JClE4XrgEELqW0cB0STLnx1nPquAUGpAftz5H8ZQStSwsyo2jkymkK1wfFyVGDqA$ > .
+
+<https://urldefense.com/v3/__http://example.org/doc-copyright-ontology__;!!ASp95G87aa5DoyK5mB3l!97D6QAuA4ioTAkEX5RTEuUN412JClE4XrgEELqW0cB0STLnx1nPquAUGpAftz5H8ZQStSwsyo2jkymkK1wfFyVGDqA$ > rdf:type owl:Ontology ;
+    owl:versionInfo "1.0" ;
+    dc:title "Document Copyright and Ownership Ontology" ;
+    dc:description "An ontology for extracting and managing copyright and ownership metadata from PDF and XLS files using Dublin Core" ;
+    dc:creator "Document Management System" ;
+    dc:date "2025-01-02"^^xsd:date .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+### Copyright and Ownership Properties
+
+:hasOwner rdf:type owl:ObjectProperty ;
+    rdfs:domain :Document ;
+    rdfs:range :Owner ;
+    rdfs:label "has owner" ;
+    rdfs:comment "Links a document to its legal owner" .
+
+:hasCopyrightHolder rdf:type owl:ObjectProperty ;
+    rdfs:subPropertyOf dcterms:rightsHolder ;
+    rdfs:domain :Document ;
+    rdfs:range :CopyrightHolder ;
+    rdfs:label "has copyright holder" .
+
+:hasLicense rdf:type owl:ObjectProperty ;
+    rdfs:subPropertyOf dcterms:license ;
+    rdfs:domain :Document ;
+    rdfs:range :License ;
+    rdfs:label "has license" .
+
+:hasAccessRights rdf:type owl:ObjectProperty ;
+    rdfs:subPropertyOf dcterms:accessRights ;
+    rdfs:domain :Document ;
+    rdfs:range :AccessRights ;
+    rdfs:label "has access rights" .
+
+:derivedFrom rdf:type owl:ObjectProperty ;
+    rdfs:subPropertyOf dcterms:source ;
+    rdfs:domain :Document ;
+    rdfs:range :Document ;
+    rdfs:label "derived from" ;
+    rdfs:comment "Indicates that a document is derived from another document" .
+
+:hasContributor rdf:type owl:ObjectProperty ;
+    rdfs:subPropertyOf dcterms:contributor ;
+    rdfs:domain :Document ;
+    rdfs:range :Contributor ;
+    rdfs:label "has contributor" .
+
+:hasMetadataExtraction rdf:type owl:ObjectProperty ;
+    rdfs:domain :Document ;
+    rdfs:range :MetadataExtraction ;
+    rdfs:label "has metadata extraction" .
+
+#################################################################
+#    Data Properties
+#################################################################
+
+### Dublin Core Data Properties
+
+:title rdf:type owl:DatatypeProperty ;
+    owl:equivalentProperty dc:title ;
+    rdfs:domain :Document ;
+    rdfs:range xsd:string ;
+    rdfs:label "title" .
+
+:creator rdf:type owl:DatatypeProperty ;
+    owl:equivalentProperty dc:creator ;
+    rdfs:domain :Document ;
+    rdfs:range xsd:string ;
+    rdfs:label "creator" .
+
+:date rdf:type owl:DatatypeProperty ;
+    owl:equivalentProperty dc:date ;
+    rdfs:domain :Document ;
+    rdfs:range xsd:dateTime ;
+    rdfs:label "date" .
+
+:rights rdf:type owl:DatatypeProperty ;
+    owl:equivalentProperty dc:rights ;
+    rdfs:domain :Document ;
+    rdfs:range xsd:string ;
+    rdfs:label "rights" .
+
+### Custom Copyright Properties
+
+:copyrightYear rdf:type owl:DatatypeProperty ;
+    rdfs:domain :Document ;
+    rdfs:range xsd:gYear ;
+    rdfs:label "copyright year" .
+
+:copyrightNotice rdf:type owl:DatatypeProperty ;
+    rdfs:domain :Document ;
+    rdfs:range xsd:string ;
+    rdfs:label "copyright notice" .
+
+:ownershipPercentage rdf:type owl:DatatypeProperty ;
+    rdfs:domain :OwnershipShare ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "ownership percentage" ;
+    owl:hasValue [ owl:minInclusive 0.0 ; owl:maxInclusive 100.0 ] .
+
+:extractionConfidence rdf:type owl:DatatypeProperty ;
+    rdfs:domain :MetadataExtraction ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "extraction confidence" ;
+    rdfs:comment "Confidence score for extracted metadata (0-1)" .
+
+:isPublicDomain rdf:type owl:DatatypeProperty ;
+    rdfs:domain :Document ;
+    rdfs:range xsd:boolean ;
+    rdfs:label "is public domain" .
+
+:embargoEndDate rdf:type owl:DatatypeProperty ;
+    rdfs:domain :Document ;
+    rdfs:range xsd:date ;
+    rdfs:label "embargo end date" .
+
+#################################################################
+#    Classes
+#################################################################
+
+### Document Classes
+
+:Document rdf:type owl:Class ;
+    rdfs:label "Document" ;
+    rdfs:comment "A digital document that can contain copyright information" .
+
+:PDFDocument rdf:type owl:Class ;
+    rdfs:subClassOf :Document ;
+    rdfs:label "PDF Document" ;
+    rdfs:comment "A document in PDF format" .
+
+:XLSDocument rdf:type owl:Class ;
+    rdfs:subClassOf :Document ;
+    rdfs:label "XLS Document" ;
+    rdfs:comment "A document in Excel format (XLS/XLSX)" .
+
+### Rights and Ownership Classes
+
+:Owner rdf:type owl:Class ;
+    rdfs:subClassOf foaf:Agent ;
+    rdfs:label "Owner" ;
+    rdfs:comment "Legal owner of a document" .
+
+:CopyrightHolder rdf:type owl:Class ;
+    rdfs:subClassOf foaf:Agent ;
+    rdfs:label "Copyright Holder" ;
+    rdfs:comment "Entity holding copyright for a document" .
+
+:Person rdf:type owl:Class ;
+    rdfs:subClassOf :Owner, :CopyrightHolder, foaf:Person ;
+    rdfs:label "Person" .
+
+:Organization rdf:type owl:Class ;
+    rdfs:subClassOf :Owner, :CopyrightHolder, foaf:Organization ;
+    rdfs:label "Organization" .
+
+:License rdf:type owl:Class ;
+    rdfs:label "License" ;
+    rdfs:comment "License under which a document is distributed" .
+
+:CreativeCommonsLicense rdf:type owl:Class ;
+    rdfs:subClassOf :License ;
+    rdfs:label "Creative Commons License" .
+
+:ProprietaryLicense rdf:type owl:Class ;
+    rdfs:subClassOf :License ;
+    rdfs:label "Proprietary License" .
+
+:AccessRights rdf:type owl:Class ;
+    rdfs:label "Access Rights" ;
+    rdfs:comment "Access rights for a document" .
+
+:PublicAccess rdf:type owl:Class ;
+    rdfs:subClassOf :AccessRights ;
+    rdfs:label "Public Access" .
+
+:RestrictedAccess rdf:type owl:Class ;
+    rdfs:subClassOf :AccessRights ;
+    rdfs:label "Restricted Access" .
+
+:EmbargoedAccess rdf:type owl:Class ;
+    rdfs:subClassOf :AccessRights ;
+    rdfs:label "Embargoed Access" .
+
+### Metadata Extraction Classes
+
+:MetadataExtraction rdf:type owl:Class ;
+    rdfs:label "Metadata Extraction" ;
+    rdfs:comment "Result of metadata extraction from a document" .
+
+:AutomaticExtraction rdf:type owl:Class ;
+    rdfs:subClassOf :MetadataExtraction ;
+    rdfs:label "Automatic Extraction" .
+
+:ManualExtraction rdf:type owl:Class ;
+    rdfs:subClassOf :MetadataExtraction ;
+    rdfs:label "Manual Extraction" .
+
+### Ownership Share Class
+
+:OwnershipShare rdf:type owl:Class ;
+    rdfs:label "Ownership Share" ;
+    rdfs:comment "Represents a share of ownership in a document" .
+
+#################################################################
+#    Individuals (Examples)
+#################################################################
+
+### License Individuals
+
+:CC_BY rdf:type :CreativeCommonsLicense ;
+    rdfs:label "CC BY" ;
+    dc:description "Creative Commons Attribution" .
+
+:CC_BY_SA rdf:type :CreativeCommonsLicense ;
+    rdfs:label "CC BY-SA" ;
+    dc:description "Creative Commons Attribution-ShareAlike" .
+
+:CC_BY_NC rdf:type :CreativeCommonsLicense ;
+    rdfs:label "CC BY-NC" ;
+    dc:description "Creative Commons Attribution-NonCommercial" .
+
+:AllRightsReserved rdf:type :ProprietaryLicense ;
+    rdfs:label "All Rights Reserved" .
+
+#################################################################
+#    SWRL Rules (Semantic Web Rule Language)
+#################################################################
+
+# Rule 1: Documents with expired embargo become public access
+# Document(?d) ^ embargoEndDate(?d, ?date) ^ swrlb:lessThan(?date, ?today) -> hasAccessRights(?d, PublicAccess)
+
+# Rule 2: Documents without copyright holder after 70 years become public domain
+# Document(?d) ^ copyrightYear(?d, ?year) ^ swrlb:subtract(?currentYear, ?year, ?age) ^ swrlb:greaterThan(?age, 70) ^ NOT hasCopyrightHolder(?d, ?holder) -> isPublicDomain(?d, true)
+
+# Rule 3: Derived documents inherit copyright holder from source
+# Document(?derived) ^ derivedFrom(?derived, ?source) ^ hasCopyrightHolder(?source, ?holder) -> hasCopyrightHolder(?derived, ?holder)
+
+#################################################################
+#    SHACL Shapes for Validation
+#################################################################
+
+:DocumentShape rdf:type sh:NodeShape ;
+    sh:targetClass :Document ;
+    sh:property [
+        sh:path :title ;
+        sh:minCount 1 ;
+        sh:datatype xsd:string ;
+        sh:message "Document must have a title"
+    ] ;
+    sh:property [
+        sh:path :creator ;
+        sh:minCount 1 ;
+        sh:message "Document must have at least one creator"
+    ] ;
+    sh:property [
+        sh:path :date ;
+        sh:minCount 1 ;
+        sh:datatype xsd:dateTime ;
+        sh:message "Document must have a creation date"
+    ] ;
+    sh:property [
+        sh:path :rights ;
+        sh:minCount 1 ;
+        sh:message "Document must have rights information"
+    ] .
+
+:CopyrightDocumentShape rdf:type sh:NodeShape ;
+    sh:targetClass :Document ;
+    sh:property [
+        sh:path :hasCopyrightHolder ;
+        sh:minCount 1 ;
+        sh:message "Copyrighted document must have a copyright holder"
+    ] ;
+    sh:property [
+        sh:path :copyrightYear ;
+        sh:datatype xsd:gYear ;
+        sh:message "Copyright year must be a valid year"
+    ] .
+
+#################################################################
+#    Example Usage
+#################################################################
+
+# Example PDF Document
+:example_pdf_001 rdf:type :PDFDocument ;
+    :title "Annual Report 2024" ;
+    :creator "John Doe" ;
+    :date "2024-12-15T10:30:00"^^xsd:dateTime ;
+    :rights "© 2024 ACME Corporation. All rights reserved." ;
+    :copyrightYear "2024"^^xsd:gYear ;
+    :copyrightNotice "This document is proprietary and confidential" ;
+    :hasCopyrightHolder :acme_corp ;
+    :hasOwner :acme_corp ;
+    :hasLicense :AllRightsReserved ;
+    :hasAccessRights :RestrictedAccess ;
+    :hasMetadataExtraction :extraction_001 .
+
+:acme_corp rdf:type :Organization ;
+    foaf:name "ACME Corporation" ;
+    rdfs:label "ACME Corporation" .
+
+:extraction_001 rdf:type :AutomaticExtraction ;
+    :extractionConfidence "0.95"^^xsd:decimal ;
+    prov:generatedAtTime "2025-01-02T14:30:00"^^xsd:dateTime .
+
+# Example XLS Document with shared ownership
+:example_xls_001 rdf:type :XLSDocument ;
+    :title "Financial Model Q4 2024" ;
+    :creator "Jane Smith" ;
+    :date "2024-10-01T09:00:00"^^xsd:dateTime ;
+    :rights "Joint ownership between ACME Corp and Beta Inc" ;
+    :hasOwner :ownership_share_001, :ownership_share_002 ;
+    :hasLicense :ProprietaryLicense ;
+    :embargoEndDate "2025-06-01"^^xsd:date ;
+    :hasAccessRights :EmbargoedAccess .
+
+:ownership_share_001 rdf:type :OwnershipShare ;
+    :hasOwner :acme_corp ;
+    :ownershipPercentage "60.0"^^xsd:decimal .
+
+:ownership_share_002 rdf:type :OwnershipShare ;
+    :hasOwner :beta_inc ;
+    :ownershipPercentage "40.0"^^xsd:decimal .
+
+:beta_inc rdf:type :Organization ;
+    foaf:name "Beta Incorporated" .

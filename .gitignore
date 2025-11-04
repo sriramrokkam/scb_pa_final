@@ -1,0 +1,14 @@
+
+# auto generated wildcard
+.env
+*.pyc
+__pycache__/
+*.ipynb
+
+Documents/
+Documents_Summary/
+Images/
+Logs/
+output/
+.venv/
+.rest/

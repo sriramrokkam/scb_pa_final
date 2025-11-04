@@ -1,0 +1,28 @@
+2025-09-16 11:31:08,417 - EarningsAnalysis - INFO - XSUAA Credentials: {'clientid': 'sb-earningsai-asst-srv!t5156', 'clientsecret': 'MTfj/vfkbSeQoRt0FjYVWHJf8sg=', 'url': 'https://core-foundational-12982zqn.authentication.ap11.hana.ondemand.com', 'xsappname': 'earningsai-asst-srv!t5156'}
+2025-09-16 11:31:08,417 - EarningsAnalysis - INFO - ***server.py -> GET HANA AND AIC CREDENTIALS FROM DESTINATION SERVICES***
+2025-09-16 11:31:08,417 - EarningsAnalysis - INFO - Destination Service Credentials: {'dest_auth_url': 'https://core-foundational-12982zqn.authentication.ap11.hana.ondemand.com', 'clientid': 'sb-cloneea30c97ffdb44032a329d9eae5d0e762!b5156|destination-xsappname!b5', 'clientsecret': '9bf4d19a-ab06-43bc-adf1-33e0982d9e7c$b9jSiz0gKFYf7w-NEz_vXYLJQUdB8_ivn474fk3cgUc=', 'dest_base_url': 'https://destination-configuration.cfapps.ap11.hana.ondemand.com'}
+2025-09-16 11:31:08,468 - EarningsAnalysis - INFO - OAuth token generated successfully.
+2025-09-16 11:31:08,561 - EarningsAnalysis - INFO - HANA Destination Details: {'owner': {'SubaccountId': 'a4858a1d-5361-433e-953b-3b1af8d72b3c', 'InstanceId': None}, 'destinationConfiguration': {'schema': 'GENAI_EARNING_CALL_1', 'Type': 'HTTP', 'Description': 'HANA Cloud connection', 'User': 'EARNINGS_AI', 'TrustAll': 'True', 'Authentication': 'BasicAuthentication', 'Port': '443', 'ProxyType': 'Internet', 'URL': 'https://3cb8ff87-b67f-4b68-8106-e297566641ef.hana.prod-ap11.hanacloud.ondemand.com', 'Name': 'EARNINGS_HDB', 'Password': 'YC2A_Ega6FTZQS912345678912'}, 'authTokens': [{'type': 'Basic', 'value': 'RUFSTklOR1NfQUk6WUMyQV9FZ2E2RlRaUVM5MTIzNDU2Nzg5MTI=', 'http_header': {'key': 'Authorization', 'value': 'Basic RUFSTklOR1NfQUk6WUMyQV9FZ2E2RlRaUVM5MTIzNDU2Nzg5MTI='}}]}
+2025-09-16 11:31:08,562 - EarningsAnalysis - INFO -  HANA Credentials: {'address': '3cb8ff87-b67f-4b68-8106-e297566641ef.hana.prod-ap11.hanacloud.ondemand.com', 'user': 'EARNINGS_AI', 'password': 'YC2A_Ega6FTZQS912345678912', 'port': '443', 'schema': 'GENAI_EARNING_CALL_1'}
+2025-09-16 11:31:08,736 - EarningsAnalysis - INFO - Successfully connected to HANA database
+2025-09-16 11:31:08,833 - EarningsAnalysis - INFO - AIC Destination Details fetched successfully
+2025-09-16 11:31:08,833 - EarningsAnalysis - INFO - Global AIC Credentials: {'aic_base_url': 'https://api.ai.prod-ap11.ap-southeast-1.aws.ml.hana.ondemand.com/v2', 'clientid': 'sb-62c837c5-218b-4736-bc14-5852a02a313f!b5156|xsuaa_std!b15301', 'clientsecret': '03019e1c-4ec9-4c57-8968-4ce79a1f572e$KMcCBVldB7zuqgAFxdvCS3yfog9hhFwrjzQv8mLPTpE=', 'aic_auth_url': 'https://core-foundational-12982zqn.authentication.ap11.hana.ondemand.com/oauth/token', 'resource_group': 'default', 'ORCHESTRATION_SERVICE_URL': 'https://api.ai.prod-ap11.ap-southeast-1.aws.ml.hana.ondemand.com/v2/inference/deployments/d53b8af17648a85c'}
+2025-09-16 11:31:08,833 - EarningsAnalysis - INFO - Loading vector stores
+2025-09-16 11:31:09,566 - EarningsAnalysis - INFO - All vector stores loaded successfully
+2025-09-16 11:31:09,570 - EarningsAnalysis - INFO - Starting Flask app on port 8080
+2025-09-16 11:31:09,570 - EarningsAnalysis - INFO - Registered rule: /static/<path:filename>
+2025-09-16 11:31:09,570 - EarningsAnalysis - INFO - Registered rule: /api/health_check
+2025-09-16 11:31:09,570 - EarningsAnalysis - INFO - Registered rule: /api/status
+2025-09-16 11:31:09,570 - EarningsAnalysis - INFO - Registered rule: /api/chat
+2025-09-16 11:31:09,570 - EarningsAnalysis - INFO - Registered rule: /api/metadata-retreival
+2025-09-16 11:31:09,570 - EarningsAnalysis - INFO - Registered rule: /api/upload
+2025-09-16 11:31:09,570 - EarningsAnalysis - INFO - Registered rule: /api/approved-file-upload
+2025-09-16 11:31:09,571 - EarningsAnalysis - INFO - Registered rule: /api/schedule-auto-delete
+2025-09-16 11:31:09,571 - EarningsAnalysis - INFO - Registered rule: /api/job/<job_id>
+2025-09-16 11:31:09,571 - EarningsAnalysis - INFO - Registered rule: /api/job/<job_id>/download
+2025-09-16 11:31:09,571 - EarningsAnalysis - INFO - Registered rule: /api/job/download_by_output_file
+2025-09-16 11:31:09,571 - EarningsAnalysis - INFO - Registered rule: /api/chat_upload
+2025-09-16 11:31:09,571 - EarningsAnalysis - INFO - Registered rule: /api/generate-embeddings
+2025-09-16 11:31:25,474 - EarningsAnalysis - INFO - Incoming request: POST http://localhost:8080/api/chat from 127.0.0.1
+2025-09-16 11:31:25,602 - EarningsAnalysis - INFO - Chat endpoint accessed
+2025-09-16 11:31:25,602 - EarningsAnalysis - INFO - Received data: {'message': 'ING Q2 2025 Stock Analysis'}

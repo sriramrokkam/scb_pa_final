@@ -1,0 +1,80 @@
+_schema-version: "3.3.0"
+ID: EarningsAI-Assistant-ST
+version: 1.0.0
+description: EarningsAI Assistant for Multiple Banks
+
+parameters:
+  enable-parallel-deployments: true
+
+### ===========================================================
+### 📦 MODULE: Python Backend App (earningai-asst-srv)
+### ===========================================================
+modules:
+  - name: earningsai-asst-ST
+    type: python
+    path: scripts
+    parameters:
+      instances: 1
+      memory: 8G
+      disk-quota: 10G
+      buildpack: python_buildpack
+      #command: gunicorn server:app --bind 0.0.0.0:$PORT --timeout 120
+      command: gunicorn server:app --bind 0.0.0.0:$PORT --workers 4 --threads 2 --timeout 120
+      #host: earningsai-asst-srv6
+      #domain: cfapps.ap11.hana.ondemand.com
+      routes:
+        - routes: earningsai-asst-ST-${org}-${space}.${default-domain}
+
+    properties:
+      FLASK_ENV: PRODUCTION
+      FLASK_APP: server.py
+
+    # 🔗 Service bindings ( Instances)
+    requires:
+      - name: xsuaa_earningsai
+      - name: dest_earningsai
+      - name: applogs_earningsai
+
+    build-parameters:
+      builder: custom
+      build-result: .
+      ignore:
+        - __pycache__/
+        - node_modules/
+        - logs/
+      commands:
+        - pip install -r requirements.txt
+
+### ===========================================================
+### 🔐 RESOURCE: XSUAA Authentication
+### ===========================================================
+resources:
+  - name: xsuaa_earningsai
+    type: org.cloudfoundry.managed-service
+    parameters:
+      service: xsuaa
+      service-plan: application
+      #service-key-name: earningsai-persistant-key
+      path: xs-security.json
+      config:
+        xsappname: earningsai-asst-srv
+
+# ### ===========================================================
+# ### 🗃️ RESOURCE: SAP Destination Services
+# ### ===========================================================
+  - name: dest_earningsai
+    type: org.cloudfoundry.managed-service
+    parameters:
+      service: destination
+      #service-key-name: earningsai-persistant-key
+      service-plan: lite
+
+
+# ### ===========================================================
+# ### 🗃️ RESOURCE: SAP Appliation Logs
+# ### ===========================================================
+  - name: applogs_earningsai
+    type: org.cloudfoundry.managed-service
+    parameters:
+      service: application-logs
+      service-plan: lite
