@@ -1,0 +1,46 @@
+{
+  "EARNINGS_CORE": {
+    "xsuaa_instance": "xsuaa_earningsai",
+    "clientid": "sb-earningsai-asst-srv!t546952",
+    "clientsecret": "ERqu5UonmVueZPHabPveq2EFbd4=",
+    "token_service_url": "https://ecosystem-iuk49wtb.authentication.us10.hana.ondemand.com/oauth/token",
+    "application_url": "https://s4hanads-ecosystem-iuk49wtb-dev-earningsai-asst-st.cfapps.us10.hana.ondemand.com"
+  },
+  "EARNINGS_HDB": {
+    "destination_name": "EARNINGS_HDB",
+    "sql_endpoint": "3f1863ec-9332-457c-985b-d88353df5ff9.hana.prod-us10.hanacloud.ondemand.com",
+    "port": 443,
+    "username": "dbadmin",
+    "password": "Initial@1"
+  },
+  "earnings_aic": {
+    "destination_name": "earnings_aic",
+    "serviceurls": {
+      "AI_API_URL": "https://api.ai.prod.us-east-1.aws.ml.hana.ondemand.com"
+    },
+    "appname": "367079b3-3023-4300-8c56-7f05b812bbe5!b122220|aicore!b164",
+    "clientid": "sb-367079b3-3023-4300-8c56-7f05b812bbe5!b122220|aicore!b164",
+    "clientsecret": "664eed88-a51d-40d3-aa44-d99cd7ff09f2$GfLXh5QaFHy8lVMUMZZ7NIGP01yuJCKF4iM8T5EiVOE=",
+    "identityzone": "sap-build-training-hcd2uswp",
+    "identityzoneid": "826a0db1-60f1-4300-9402-3cf6322729d1",
+    "url": "https://sap-build-training-hcd2uswp.authentication.us10.hana.ondemand.com/oauth/token"
+  }
+}
+{
+"xsuaa_instance": "xsuaa_earningsai",
+"clientid": "sb-earningsai-asst-srv!t546952",
+"clientsecret": "ERqu5UonmVueZPHabPveq2EFbd4=",
+"token_service_url": "https://ecosystem-iuk49wtb.authentication.us10.hana.ondemand.com/oauth/token",
+"application_url": "https://s4hanads-ecosystem-iuk49wtb-dev-earningsai-asst-st.cfapps.us10.hana.ondemand.com"
+}
+
+{
+  "peeranalysis": {
+    "destination_name": "peeranalysis",
+    "application_url": "https://s4hanads-ecosystem-iuk49wtb-dev-earning-upload-srv.cfapps.us10.hana.ondemand.com",
+    "clientid": "sb-earning-upload!t546952",
+    "clientsecret": "f128e745-1e29-4cef-becb-f401f34e8d8f$Ban6z9oNnmFZd2uo7LLbi2yCuLodlAO-_tE75qn_FhA=",
+    "token_service_url": "https://ecosystem-iuk49wtb.authentication.us10.hana.ondemand.com/oauth/token",
+    "xsappname": "earning-upload!t546952"
+  }
+}

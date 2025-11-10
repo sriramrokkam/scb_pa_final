@@ -675,7 +675,7 @@ def generate_embeddings():
     cleanup_directories() # Cleanup the Directories at the Start and the End
 
     # Step 1: Download files
-    # logger.info("Step 2: Downloading files for embedding generation")
+    logger.info("Step 2: Downloading files for embedding generation")
     downloaded_files = download_embedding_files(
         documents_dir=documents_dir,
         images_dir=images_dir,
